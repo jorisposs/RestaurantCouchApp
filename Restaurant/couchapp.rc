@@ -1,0 +1,1 @@
+{"env":{"staging":{"db":"http:\/\/127.0.0.1:5984\/restaurant"},"default":{"db":"http:\/\/127.0.0.1:5984\/restaurant"},"production":{"db":"http:\/\/user:password@127.0.0.1:5984\/production"}}}

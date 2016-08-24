@@ -1,0 +1,3 @@
+function(doc) {
+	emit(doc.gerecht + ' ' + doc.hoeveelheid + ' ' + doc.tafelNr + ' ' + doc.opmerkingen + ' ' + doc.bestelDatumUur);
+};

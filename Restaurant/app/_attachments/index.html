@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bestellingen</title>
+   
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <link rel='stylesheet' href='style/bootstrap.min.css' type='text/css'>
+    <link rel='stylesheet' href='style/main.css' type='text/css'>
+  </head>
+  <body>
+  
+  <div class='well'>
+		<table class='table table-hover'>
+		<tr>
+			<td>
+				<table>
+					<tr>
+					<td colspan="3" align="center">
+					<h2>Voeg bestellingen toe</h2></td>
+					</tr>  
+					<tr>
+					<td colspan="3">&nbsp;</td>
+					</tr>
+					<tr>
+					<td>Gerecht :</td>
+					<td class="gerecht">
+					<select>
+						<option value="sushi">Sushi</option>
+						<option value="sashimi"> Sashimi</option>
+						<option value="shabuShabu">Shabu shabu</option>
+						<option value="sukiyaki">Sukiyaki</option>
+						<option value="nikujaga">Nikujaga</option> 
+						<option value="tonkatsu">Tonkatsu</option>
+					</select>
+					</td>
+					<tr>
+					<td>Hoeveelheid :</td><td class="hoeveelheid">
+					<select>
+						<option value="éénPortie">Eén portie</option>
+						<option value="tweePorties"> Twee porties</option>
+						<option value="driePorties">Drie porties</option>
+						<option value="vierPorties">Vier porties</option>
+						<option value="vijfPorties">Vijf porties</option>
+						<option value="zesPorties">Zes porties</option>
+						<option value="zevenPorties">Zeven porties</option>
+						<option value="achtPorties">Acht porties</option> 
+						<option value="negenPorties">Negen porties</option>
+						<option value="tienPorties">Tien porties</option>
+					</select></td>
+					</tr>
+					<tr>
+					<td>Tafelnummer:</td><td class="tafelNR">
+					<select>
+						<option value="tafelEén">Tafel 1</option>
+						<option value="tafelTwee">Tafel 2</option>
+						<option value="tafelDrie">Tafel 3</option>
+						<option value="tafelVier">Tafel 4</option>
+						<option value="tafelVijf">Tafel 5</option>
+						<option value="tafelZes">Tafel 6</option>
+						<option value="tafelZeven">Tafel 7</option>
+						<option value="tafelAcht">Tafel 8</option>
+						<option value="tafelNegen">Tafel 9</option>
+						<option value="tafelTien">Tafel 10</option>
+						<option value="tafelElf">Tafel 11</option>
+						<option value="tafelTwaalf">Tafel 12</option>
+					</select>
+					</td>
+					</tr>
+					<tr>
+					<td>Opmerkingen:</td><td><input id="opmerkingen" type="text" size="50"></td>
+					</tr>
+					<tr>
+					<td>Datum en uur van bestellen</td><td><iframe src="http://free.timeanddate.com/clock/i5cbz358/n337/tlbe14/tt0/td1/th1/ts1/tb4" frameborder="0" width="203" height="34"></iframe>
+					</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+						<button type='button' class='btn btn-primary' onClick='createDoc()'>Ok</button>
+						</td>
+					</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<br/>
+		<div id='output'></div>
+		<div id='edit'></div>
+		<div id='search'>
+			<input type='text' id='students' data-provide='typeahead' placeholder='Bestelling' />
+			<button type='button' class='btn btn-success' onClick='searchDoc()'>Zoeken</button>
+		</div>
+  </div>
+  </body>
+  	<script src='scripts/jquery_2.js'></script>
+    <script src='scripts/students.js'></script>
+    <script src='scripts/bootstrap.min.js'></script>
+</html>
